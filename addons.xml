@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="skin.cat" version="0.36.5" name="SkinCat" provider-name="BunkerLab">
+<addon id="skin.cat" version="0.36.6" name="SkinCat" provider-name="BunkerLab">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
