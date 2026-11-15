@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.cat" version="0.36.10" name="SkinCat" provider-name="BunkerLab">
+<addon id="skin.cat" version="0.36.11" name="SkinCat" provider-name="BunkerLab">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
@@ -18,6 +18,10 @@
 	</extension>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
+			<item library="scripts/skincat_eps.py">
+				<label>Ver capítulos</label>
+				<visible>String.IsEqual(ListItem.Property(skincat_eps),1)</visible>
+			</item>
 			<item library="scripts/skincat_favmove.py">
 				<label>Mover a otra posición…</label>
 				<visible>String.IsEqual(ListItem.Property(skincat_fav),1)</visible>
